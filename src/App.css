@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #fce4ec, #f8bbd0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  margin: 10px;
+}
+
+.card-header {
+  background: url('https://www.svgrepo.com/show/19080/butterfly.svg') no-repeat center/cover;
+  padding: 20px;
+  color: #d81b60;
+}
+
+.title {
+  font-size: 2em;
+  margin: 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.message {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #880e4f;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #ad1457;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.detail-item {
+  text-align: center;
+  color: #4a148c;
+  flex: 1;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.separator hr {
+  width: 80%;
+  border: 0.5px solid #4a148c;
+}
+
+.map-container {
+  margin-bottom: 20px;
+}
+
+.decoration img {
+  width: 50px;
+  height: 50px;
+}
+
+.card-footer {
+  background-color: #f8bbd0;
+  padding: 10px;
+  color: #880e4f;
+  font-size: 1.2em;
+}
+
+.confetti {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: url('https://www.svgrepo.com/show/305281/confetti.svg') repeat;
+  opacity: 0.3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .details {
+    flex-direction: column;
+  }
+
+  .separator hr {
+    width: 100%;
+  }
+}
